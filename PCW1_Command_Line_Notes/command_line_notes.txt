@@ -1,0 +1,69 @@
+COMMAND LINE NOTES
+
+date = gives the date, time and time zone set my the computer
+pwd = prints the working directory you are in
+cd = change directory
+.. = takes you back to the parent directory
+
+ls = lists the folfers/files in that directory
+ls -lA = list all hidden directories
+ls -l = lists the file permisions in the directory
+chmod ugo+rwe FILE_NAME = adds permisions to the files
+chmod ugo-rwe FILE_NAME = removes permisions to the files
+u = user
+g = group
+o = other
+r = read
+w = write
+x = executable
+
+- = a switch
+
+touch FILE_NAME = creates a new file
+mkdir FILE_NAME = make a new directory
+mkdir -p file/file/file = make multiple directories
+rmdir FILE_NAME = removes the directory you called
+rm FILE_NAME = removes the file called
+rm -r FILE_NAME = deletes all files within that directory
+rm -i FILE_NAME = will ask you to confirm if you want to delete that file(type of saftey net)
+rm -f FILE_NAME = deletes files even if write protected
+cp FILE_NAME = creates a copy of the file you called (place the file you want to move it to or what name you want to name it after the FILE_NAME)
+mv FILE_NAME = moves the file to a new location (place the file you want to move it to or what name you want to name it after the FILE_NAME)
+
+cat FILE_NAME = will display the file within the terminal
+cat > FILE_NAME = allows you to add text to the file, press 'ctrl C' to escape out (use >> to apend to the file if otherwise it will overwrite whats inside)
+cat FILE_NAME1 FILE_NAME2 > NEW_FILE_NAME = this will combine the 1st 2 files togeather and create a new file
+
+less FILE_NAME = allows you to view the  whle file in the terminal as well as scroll up and down inside it, use 'q' to quit out of it
+head -5 = prints the first 5 lines of a file(change the number to display more/less - 10 is the default setting)
+tail -5 = prints the last 5 lines of a file
+
+ls *.txt = will list all files in that directory that are .txt files (change the .txt to be whatever file tyoe you want)
+find . -name "*.txt" -print = find will search through all files depending on where you ask it do and print back all files of that type that it finds
+grep = allows you to search through a file for specfic words
+grep "a" FILE_NAME = allows you to search the file for anywords with "a" inside it
+
+wc = counts the file c = size(bytes), l = lines, w = words, m = charcters
+
+echo "display these words" = will print to the screen what you have put between the ""
+
+which ruby = will display the file oath and ruby version AKA shebang
+#!/richardgeoghegan.rvm/rubies/ruby-2.1.5/bin/ruby = copy the shebang and add #! to the begining of the file in the text editer (doing it this way will only allow the file to work on the creaters system)
+#!/usr/bin/env ruby = this allows the file to work om all systems
+./FILE_NAME.rb = this will run your file in the terminal
+
+env = view environment variables
+export VARIABLE_name=variable = creates a new local variable
+echo $VARIABLE_name = how to read a variable back
+echo "export VARIABLE_NAME=variable" >> ~/.bash_profile = exports the variable to be used in all shells
+unset VARIABLE_NAME = removes a local variable set??????
+
+VIM = text editor within terminal
+vi FILE_NAME = this allows you to edit files in VIM
+i = edit text
+o = open a new line after the current line
+dd = delete current line and dozens of others
+ESC =  gets you back to the command line
+:w = saves/writes to the file
+:q = quits VIM
+:q! = quits VIM without saving
